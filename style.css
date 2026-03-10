@@ -1,16 +1,16 @@
 body{
 margin:0;
-font-family: "Segoe UI", sans-serif;
+font-family: "Poppins", sans-serif;
 color:white;
 text-align:center;
 scroll-behavior:smooth;
 
 background: linear-gradient(
 135deg,
-#7FA7D9 0%,
-#E6C79A 35%,
-#D4A24C 65%,
-#8B2E4A 100%
+#4f6fa5 0%,
+#caa35a 40%,
+#a86c3d 70%,
+#6b2d3e 100%
 );
 
 background-attachment: fixed;
@@ -23,14 +23,52 @@ display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
+position:relative;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+width:600px;
+height:600px;
+
+background: radial-gradient(
+circle,
+rgba(212,162,76,0.35) 0%,
+rgba(212,162,76,0.15) 40%,
+transparent 70%
+);
+
+filter: blur(60px);
+
+animation: glowMove 8s infinite alternate ease-in-out;
+z-index:0;
+}
+
+.hero *{
+position:relative;
+z-index:1;
+}
+
+@keyframes glowMove{
+0%{
+transform: translate(-50px,-30px) scale(1);
+}
+100%{
+transform: translate(50px,30px) scale(1.2);
+}
 }
 
 h1{
-font-size:4rem;
+font-family: "Great Vibes", cursive;
+font-size:5rem;
 margin:0;
-color:#F3E3C8;
-letter-spacing:2px;
-text-shadow:0 4px 20px rgba(0,0,0,0.4);
+
+color:#F5E7C5;
+
+text-shadow:
+0 6px 30px rgba(0,0,0,0.5),
+0 0 20px rgba(212,162,76,0.5);
 }
 
 .subtitle{
@@ -45,18 +83,20 @@ gap:25px;
 }
 
 .box{
-background: rgba(255,255,255,0.15);
+background: rgba(255,255,255,0.12);
 padding:20px 25px;
-border-radius:14px;
-backdrop-filter: blur(8px);
+border-radius:16px;
+
+backdrop-filter: blur(12px);
 border:1px solid rgba(255,255,255,0.25);
-box-shadow:0 8px 25px rgba(0,0,0,0.25);
+
+box-shadow:0 10px 30px rgba(0,0,0,0.35);
 }
 
 .box span{
 font-size:3rem;
 font-weight:bold;
-display:block;
+color:#F5E7C5;
 }
 
 .date{
@@ -93,5 +133,6 @@ font-size:2.5rem;
 
 
 }
+
 
 
