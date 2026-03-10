@@ -5,15 +5,29 @@ margin:0;
 font-family:"Cormorant Garamond", serif;
 color:#3a2b1f;
 
+/* blue → gold gradient from invitation */
+
 background: linear-gradient(
 135deg,
-#eef3f8,
-#f4e6cf,
-#e6c79a
+#7fa7d9 0%,
+#bcd3ec 25%,
+#f2d7a6 65%,
+#e2b873 100%
 );
+
+background-size:200% 200%;
+animation: gradientMove 14s ease infinite;
 
 min-height:100vh;
 overflow-x:hidden;
+}
+
+/* subtle gradient motion */
+
+@keyframes gradientMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
 }
 
 
@@ -107,13 +121,13 @@ margin-top:25px;
 /* ---------- TIMER BOX ---------- */
 
 .box{
-background:rgba(255,255,255,0.8);
+background:rgba(255,255,255,0.85);
 padding:18px;
 border-radius:14px;
 
 text-align:center;
 
-box-shadow:0 8px 22px rgba(0,0,0,0.08);
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
 }
 
 .box span{
