@@ -279,9 +279,20 @@ text-align:center;
 margin:auto;
 }
 
+/* keep timer in one line */
+
 .countdown{
-grid-template-columns:repeat(2,100px);
-justify-content:center;
+grid-template-columns:repeat(4,1fr);
+max-width:360px;
+margin:auto;
+}
+
+.box{
+padding:14px;
+}
+
+.box span{
+font-size:1.8rem;
 }
 
 .hero-right{
@@ -289,11 +300,12 @@ margin-top:40px;
 }
 
 .hero-image{
-width:300px;
+width:280px;
 }
 
 h1{
-font-size:3.2rem;
+font-size:3rem;
 }
 
 }
+
