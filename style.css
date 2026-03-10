@@ -19,11 +19,12 @@ justify-content:center;
 align-items:center;
 
 background:linear-gradient(
-rgba(0,0,0,0.5),
-rgba(0,0,0,0.5)
+rgba(0,0,0,0.6),
+rgba(0,0,0,0.6)
 ),
-
-url("https://images.unsplash.com/photo-udaipur-lake-palace.jpg");
+url("https://images.unsplash.com/photo-1605649487212-47bdab064df7");
+background-size:cover;
+background-position:center;
 
 background-size:cover;
 
@@ -91,5 +92,6 @@ justify-content:center;
 h1{
 font-size:2.5rem;
 }
+
 
 }
