@@ -235,17 +235,6 @@ text-align:center;
 }
 
 
-/* ---------- PHOTO SECTION ---------- */
-
-.photo img{
-width:100%;
-max-width:800px;
-border-radius:16px;
-margin:60px auto;
-display:block;
-}
-
-
 /* ---------- MOBILE ---------- */
 
 @media(max-width:900px){
@@ -279,3 +268,4 @@ font-size:3.5rem;
 }
 
 }
+
