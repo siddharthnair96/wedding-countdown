@@ -89,14 +89,16 @@ font-family:"Great Vibes", cursive;
 font-size:4.6rem;
 margin:0 0 10px 0;
 
+/* darker foil gold */
+
 background: linear-gradient(
 120deg,
-#d4af37 0%,
-#f7e7a1 20%,
-#cfa63a 40%,
-#fff2b3 50%,
-#c89b2c 70%,
-#f7e7a1 90%
+#8f6b1f 0%,
+#c9a227 20%,
+#e6c85c 35%,
+#b8962e 55%,
+#7a5a17 75%,
+#e6c85c 100%
 );
 
 background-size:200% auto;
@@ -107,8 +109,8 @@ background-size:200% auto;
 animation: goldShimmer 6s linear infinite;
 
 text-shadow:
-0 1px 1px rgba(0,0,0,0.15),
-0 2px 4px rgba(0,0,0,0.1);
+0 1px 1px rgba(0,0,0,0.2),
+0 3px 6px rgba(0,0,0,0.15);
 }
 
 @keyframes goldShimmer{
@@ -318,3 +320,4 @@ width:260px;
 }
 
 }
+
