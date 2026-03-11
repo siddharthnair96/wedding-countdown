@@ -32,9 +32,9 @@ overflow-x:hidden;
 .hero{
 min-height:100vh;
 display:flex;
-align-items:center;
+align-items:flex-start;
 justify-content:center;
-padding:80px 8%;
+padding:50px 8% 60px 8%;
 position:relative;
 }
 
@@ -224,16 +224,13 @@ animation: floatCard 6s ease-in-out infinite;
 
 .scroll-indicator{
 position:absolute;
-bottom:40px;
+bottom:30px;
 left:50%;
 transform:translateX(-50%);
-
 font-size:0.9rem;
 letter-spacing:3px;
-
 color:#7a5a3c;
 opacity:.8;
-
 animation: scrollPulse 2s infinite;
 }
 
@@ -320,5 +317,6 @@ width:260px;
 }
 
 }
+
 
 
