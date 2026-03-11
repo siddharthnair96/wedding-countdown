@@ -58,6 +58,7 @@ align-items:center;
 max-width:520px;
 position:relative;
 z-index:2;
+text-align:center;
 }
 
 
@@ -93,6 +94,8 @@ font-family:"Great Vibes", cursive;
 font-size:4.2rem;
 margin:0 0 10px 0;
 
+text-align:center;
+  
 background: linear-gradient(
 120deg,
 #8f6b1f 0%,
@@ -370,3 +373,4 @@ width:260px;
 }
 
 }
+
