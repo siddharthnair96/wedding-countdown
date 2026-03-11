@@ -1,5 +1,4 @@
 /* ---------- PAGE BACKGROUND ---------- */
-
 body{
 margin:0;
 font-family:"Cormorant Garamond", serif;
@@ -34,9 +33,7 @@ min-height:100vh;
 display:flex;
 align-items:flex-start;
 justify-content:center;
-
 padding:50px 8% 80px 8%;
-
 position:relative;
 }
 
@@ -63,7 +60,8 @@ position:relative;
 z-index:2;
 }
 
-/* soft glow behind text */
+
+/* glow behind text */
 
 .hero-left::before{
 content:"";
@@ -83,6 +81,7 @@ left:40%;
 
 transform:translate(-50%,-50%);
 z-index:-1;
+
 filter:blur(20px);
 }
 
@@ -114,11 +113,34 @@ animation: goldShimmer 6s linear infinite;
 text-shadow:
 0 1px 1px rgba(0,0,0,0.2),
 0 3px 6px rgba(0,0,0,0.15);
+
+line-height:1.1;
 }
 
 @keyframes goldShimmer{
 0%{background-position:0% center;}
 100%{background-position:200% center;}
+}
+
+
+/* ---------- AMPERSAND DECORATION ---------- */
+
+.amp-wrap{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:12px;
+margin:6px 0;
+}
+
+.amp{
+font-size:2.5rem;
+}
+
+.line{
+height:1px;
+width:60px;
+background:rgba(90,70,54,0.4);
 }
 
 
@@ -168,9 +190,7 @@ font-size:0.8rem;
 /* ---------- CALENDAR BUTTON ---------- */
 
 .date-button{
-
 display:inline-block;
-
 margin-top:20px;
 
 padding:12px 24px;
@@ -182,20 +202,15 @@ background:rgba(255,255,255,0.75);
 text-decoration:none;
 
 color:#5a4636;
-
 font-size:0.95rem;
 
 letter-spacing:1px;
-
 font-weight:500;
 
 box-shadow:0 10px 20px rgba(0,0,0,0.08);
 
 transition:all .25s ease;
-
 }
-
-/* remove link styling */
 
 .date-button:link,
 .date-button:visited{
@@ -204,72 +219,30 @@ color:#5a4636;
 }
 
 .date-button:hover{
-
 transform:translateY(-2px);
-
 background:white;
-
 box-shadow:0 14px 28px rgba(0,0,0,0.12);
-
 }
 
-/* ---------- SCROLL INDICATOR (VISIBLE ON LOAD) ---------- */
+
+/* ---------- SCROLL INDICATOR ---------- */
 
 .scroll-indicator{
-
 margin-top:35px;
 
 font-size:0.85rem;
 letter-spacing:3px;
 
 color:#7a5a3c;
-
 opacity:.8;
 
 animation: scrollPulse 2s infinite;
 }
 
 @keyframes scrollPulse{
-
 0%{opacity:0.3; transform:translateY(0);}
 50%{opacity:1; transform:translateY(6px);}
 100%{opacity:0.3; transform:translateY(0);}
-
-}
-
-/* ---------- DATE BUTTON ---------- */
-
-.date-button{
-
-display:inline-block;
-
-margin-top:20px;
-
-padding:10px 18px;
-
-border-radius:30px;
-
-background:rgba(255,255,255,0.7);
-
-text-decoration:none;
-
-color:#5a4636;
-
-font-size:1rem;
-
-box-shadow:0 6px 16px rgba(0,0,0,0.1);
-
-transition:all .25s ease;
-}
-
-.date-button:hover{
-
-transform:translateY(-2px);
-
-background:white;
-
-box-shadow:0 10px 22px rgba(0,0,0,0.15);
-
 }
 
 
@@ -319,9 +292,9 @@ animation: floatCard 6s ease-in-out infinite;
 }
 
 @keyframes floatCard{
-0%{ transform:translateY(0px); }
-50%{ transform:translateY(-10px); }
-100%{ transform:translateY(0px); }
+0%{transform:translateY(0px);}
+50%{transform:translateY(-10px);}
+100%{transform:translateY(0px);}
 }
 
 
@@ -329,6 +302,7 @@ animation: floatCard 6s ease-in-out infinite;
 
 .story{
 padding:120px 20px;
+
 max-width:720px;
 margin:auto;
 
@@ -387,11 +361,6 @@ font-size:1.2rem;
 margin-bottom:20px;
 }
 
-.date{
-margin-top:15px;
-font-size:1rem;
-}
-
 .hero-right{
 margin-top:20px;
 }
@@ -401,6 +370,3 @@ width:260px;
 }
 
 }
-
-
-
