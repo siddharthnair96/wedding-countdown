@@ -223,14 +223,17 @@ animation: floatCard 6s ease-in-out infinite;
 /* ---------- SCROLL INDICATOR ---------- */
 
 .scroll-indicator{
-position:absolute;
-bottom:30px;
-left:50%;
-transform:translateX(-50%);
-font-size:0.9rem;
+
+margin-top:40px;
+
+font-size:0.85rem;
 letter-spacing:3px;
+
 color:#7a5a3c;
 opacity:.8;
+
+text-align:center;
+
 animation: scrollPulse 2s infinite;
 }
 
@@ -317,6 +320,7 @@ width:260px;
 }
 
 }
+
 
 
 
