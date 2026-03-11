@@ -1,4 +1,4 @@
-const targetDate = new Date("October 12, 2026 07:00:00").getTime();
+const targetDate = new Date("October 12, 2026 10:30:00").getTime();
 
 const timer = setInterval(function(){
 
@@ -34,5 +34,6 @@ spread:100
 });
 
 }
+
 
 },1000);
