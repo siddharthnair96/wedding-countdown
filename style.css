@@ -165,14 +165,39 @@ font-size:0.8rem;
 }
 
 
-/* ---------- DATE ---------- */
+/* ---------- CALENDAR BUTTON ---------- */
 
-.date{
+.date-button{
+display:inline-block;
 margin-top:20px;
-font-size:1.1rem;
+
+padding:12px 22px;
+
+border-radius:40px;
+
+background:rgba(255,255,255,0.65);
+backdrop-filter:blur(6px);
+
+text-decoration:none;
+
 color:#5a4636;
+font-size:0.95rem;
+letter-spacing:1px;
+
+box-shadow:0 8px 18px rgba(0,0,0,0.08);
+
+transition:all .25s ease;
 }
 
+.date-button:hover{
+
+transform:translateY(-2px);
+
+background:rgba(255,255,255,0.9);
+
+box-shadow:0 12px 24px rgba(0,0,0,0.12);
+
+}
 
 /* ---------- SCROLL INDICATOR (VISIBLE ON LOAD) ---------- */
 
@@ -362,4 +387,5 @@ width:260px;
 }
 
 }
+
 
